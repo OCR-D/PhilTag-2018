@@ -26,7 +26,7 @@ class: title-slide
 # Überblick
 
 - OCR-D-Framework (Konstantin Baierer, Volker Hartmann, Clemens Neudecker)
-- OCR-D-Ground-Truth (Matthias Boenig)
+- OCR-D-Ground-Truth (Matthias Boenig, Maria Federbusch)
 - Training mit Tesseract 4 (Uwe Springmann)
 
 ---
@@ -68,7 +68,15 @@ class: title-slide
 
 ---
 
-#  Framework
+class: title-slide
+
+# OCR-D-Framework
+
+Baierer, Hartmann, Neudecker, Würzner
+
+---
+
+#  Grundzüge
 
 - Ziele:
     1. Integration der Ergebnisse der Modulprojekte
@@ -139,3 +147,48 @@ class: title-slide
     + Beschreibungsinventar (noch) nicht ausreichend für OCR-D
     + andauernde Evaluation PAGE vs ALTO, **Transformationsszenarien**
     + offene Entwicklung und Erweiterung via https://github.com/altoxml
+
+---
+
+class: title-slide
+
+# OCR-D-Ground-Truth
+
+Boenig, Federbusch, Würzner
+
+---
+
+# Überblick
+
+- Erstellung von **Referenzdaten** innerhalb von OCR-D
+    + repräsentatives Bild der Phänomenlage in den VDs
+    + vollständige Erfassung in Text und Struktur
+- Formulierung von **Erfassungsrichtlinien**
+    + Konsolidierung der Formatanforderungen
+    + Formatdokumentation
+    + Handlungsanweisung für die GT-Erstellung
+    + Operationalisierung der Überprüfbarkeit der Validität
+- Kritik: Umfang für Training **nicht aussreichend**
+
+---
+
+class: title-slide
+
+# Training Tesseract 4
+
+Springmann, Würzner
+
+---
+
+# Ausgangslage
+
+---
+
+class: title-slide
+
+# Danke für Ihre Aufmerksamkeit
+
+https://ocr-d.de
+
+
+https://github.com/OCR-D
