@@ -105,4 +105,8 @@ class: title-slide
 
 # Warum METS
 
-
+- Standardarbeitsformat in **Bibliotheken** und DFG-Richtlinien
+- Standardausgabeformat von **Digitalisierungsdienstleistern**
+- Anschluss an Präsentations-, Archiv- und Katalogsysteme
+- umfangreicher Satz an Meta- und Primärdatenfeldern
+- **Anschlusspunkt** an vorhandene Digitalisierungsworkflows
