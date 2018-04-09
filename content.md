@@ -68,22 +68,43 @@ class: title-slide
 
 ---
 
-# Framework
+# Ziel des OCR-D Framework
 
-- Ziel:
-    1. Integration der Ergebnisse der Modulprojekte
-        * wohldefinierte Schnittstellen
-        * etablierte Austauschformate
-    2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
-        * *Apache Taverna* als Workflowengine
-        * File-Cache
-        * Formatkonvertierungen
-        * *Forschungsdatenrepositorium*
-- Referenz:
-    + https://github.com/OCR-D/pyocrd/
-        * Workflow auf Basis vorhandener OpenSource-Komponenten (im Aufbau)
-        * Spielwiese für Entwickler
-        * Illustration der Schnittstellen
+1. Integration der Ergebnisse der Modulprojekte
+  * wohldefinierte Schnittstellen
+  * etablierte Austauschformate
+2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
+  * Validierung von Daten und Komponenten
+  * Discovery der integrierten Dienste
+  * Containerisierung
+  * Formatkonvertierung
+  * *Forschungsdatenrepositorium*
+  * *LZA*
+
+---
+
+# [OCR-D/spec](https://github.com/OCR-D/spec)
+  - Formale Specs für CLI, HTTP API, Discovery
+  - *Apache Taverna* als Workflowengine
+  - File-Cache
+  - Formatkonvertierungen
+  - *Forschungsdatenrepositorium*
+
+---
+
+# [OCR-D/core](https://github.com/OCR-D/pyocrd)
+  * Implementierung der Schnittstellen, Helpers und Experimente in Python
+  * CLI für wiederkehrende Aufgaben
+    * Arbeit mit METS/PAGE
+    * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
+    * Validierung
+  * Spielwiese für Entwickler
+  * Illustration der Schnittstellen
+
+---
+
+# [OCR-D/ocrd_tesserocr](https://github.com/OCR-D/ocrd_tesserocr)
+  * Referenzimplementierung der Interfaces (Apache 2.0, im Aufbau)
 
 ---
 
@@ -93,7 +114,7 @@ class: title-slide
     + Fokus für die Verarbeitung von Anfang an: **Massendigitalisierung**
     + Dokumentation und Beispiele: https://github.com/OCR-D/spec/
     + METS als Austauschformat
-        * `FileSection` für Referenzen auf Quell- und (Zwischen-)Ergebnisdateien
+        * `fileSection` für Referenzen auf Quell- und (Zwischen-)Ergebnisdateien
         * `USE`-Attribute zur Kenntlichmachung
     + METS für Ergebnisse auf **Dokumentebene**
         * `structMap TYPE=logical` für Dokumentstruktur
