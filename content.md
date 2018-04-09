@@ -290,8 +290,19 @@ Springmann, Würzner
         * *These instructions only cover the case of rendering from fonts, ...*
         * *The only supported option is to use synthetic training data created by tesstrain.sh script using training text and unicode fonts.*
 - Trainingsskripte unnötig komplex, mit vielen impliziten Annahmen
-- nichtsdestotrotz bleibt Tesseract die verbreitetste, verfügbare OCR-Engine
+
+---
+
+# Motivation
+
+- nichtsdestotrotz bleibt Tesseract die **verbreitetste, verfügbare OCR-Engine**
     + Unterstützung in OCR-D als Ziel
+- zwei Optionen:
+    1. synthetisches Training
+        * Generierung von Zeilenbildern aus Volltext und Computerschriftarten per **Fontrendering**
+    2. Testen, ob es vielleicht doch geht...
+- Training mit synthetischen Daten für historische Vorlagen mit hoher Zeichendarstellungsvarianz bisher nicht erfolgreich
+- also Option 2!
 
 ---
 
