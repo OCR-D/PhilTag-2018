@@ -178,6 +178,31 @@ Boenig, Federbusch, Würzner
 
 # Erweiterung
 
+- Ausweitung des GT-Bestands um Strukturdaten aus dem DTA
+    + erhoben im Vorfeld der manuellen Transkription
+    + zur Erfassung der Phänomenbereiche auf Werkebene
+    + rechteckige Zonen
+    + keine vorhergehende Bildoptimierung 
+- heuristische Auswahl vollständig gezonter Seiten
+    + Anzahl der Zonen
+    + Verhältnis der Gesamtabdeckung zur Seitengröße
+    + *precision*-orientiert
+- Konvertierung nach PAGE
+
+---
+
+# Beispiel
+
+.center[![Beispiel 1](figures/image1_custom.jpg)]
+
+---
+
+count:false
+
+# Beispiel
+
+.center[![Beispiel 1](figures/image1_custom2.jpg)]
+
 ---
 
 class: title-slide
