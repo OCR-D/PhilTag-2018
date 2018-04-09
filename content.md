@@ -25,6 +25,8 @@ class: title-slide
 
 # Überblick
 
-+ OCR-D-Framework
-+ OCR-D-Ground-Truth
-+ Training mit Tesseract 4
++ OCR-D-Framework (Konstantin Baierer, Volker Hartmann, Clemens Neudecker)
++ OCR-D-Ground-Truth (Matthias Boenig)
++ Training mit Tesseract 4 (Uwe Springmann)
+
+---
