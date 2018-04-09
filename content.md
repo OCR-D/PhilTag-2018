@@ -68,49 +68,42 @@ class: title-slide
 
 ---
 
-# Ziel des OCR-D Framework
+#  Framework
 
-1. Integration der Ergebnisse der Modulprojekte
-  * wohldefinierte Schnittstellen
-  * etablierte Austauschformate
-2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
-  * Validierung von Daten und Komponenten
-  * Discovery der integrierten Dienste
-  * Containerisierung
-  * Formatkonvertierung
-  * *Forschungsdatenrepositorium*
-  * *LZA*
-
----
-
-# [OCR-D/spec](https://github.com/OCR-D/spec)
-  - Formale Specs für CLI, HTTP API, Discovery
-  - *Apache Taverna* als Workflowengine
-  - File-Cache
-  - Formatkonvertierungen
-  - *Forschungsdatenrepositorium*
+- Ziele:
+    1. Integration der Ergebnisse der Modulprojekte
+        * wohldefinierte Schnittstellen
+        * etablierte Austauschformate
+    2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
+        * Validierung von Daten und Komponenten
+        * Discovery der integrierten Dienste
+        * Containerisierung
+        * Formatkonvertierung
+        * File-Cache
+        * *Forschungsdatenrepositorium*
 
 ---
 
-# [OCR-D/core](https://github.com/OCR-D/pyocrd)
-  * Implementierung der Schnittstellen, Helpers und Experimente in Python
-  * CLI für wiederkehrende Aufgaben
-    * Arbeit mit METS/PAGE
-    * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
-    * Validierung
-  * Spielwiese für Entwickler
-  * Illustration der Schnittstellen
+# Eigenentwicklungen
 
----
-
-# [OCR-D/ocrd_tesserocr](https://github.com/OCR-D/ocrd_tesserocr)
-  * Referenzimplementierung der Interfaces (Apache 2.0, im Aufbau)
+- [OCR-D/spec](https://github.com/OCR-D/spec)
+    + Formale Specs für CLI, HTTP API, Discovery
+- [OCR-D/core](https://github.com/OCR-D/pyocrd)
+    + Implementierung der Schnittstellen, Helpers und Experimente in Python
+    + CLI für wiederkehrende Aufgaben
+        * Arbeit mit METS/PAGE
+        * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
+        * Validierung
+    + Spielwiese für Entwickler
+    + Illustration der Schnittstellen
+- [OCR-D/ocrd_tesserocr](https://github.com/OCR-D/ocrd_tesserocr)
+    + Referenzimplementierung der Interfaces (Apache 2.0, im Aufbau)
 
 ---
 
 # Formate
 
-- Grundlagen:
+- Überblick:
     + Fokus für die Verarbeitung von Anfang an: **Massendigitalisierung**
     + Dokumentation und Beispiele: https://github.com/OCR-D/spec/
     + METS als Austauschformat
@@ -124,10 +117,23 @@ class: title-slide
 
 ---
 
-# Warum METS
+# Warum METS?
 
 - Standardarbeitsformat in **Bibliotheken** und DFG-Richtlinien
 - Standardausgabeformat von **Digitalisierungsdienstleistern**
 - Anschluss an Präsentations-, Archiv- und Katalogsysteme
 - umfangreicher Satz an Meta- und Primärdatenfeldern
 - **Anschlusspunkt** an vorhandene Digitalisierungsworkflows
+
+---
+
+# Warum PAGE (und nicht ALTO)?
+
+- speziell für die granularen Bedürfnisse der Repräsentation von Ergebnissen der Text- und Strukturerkennung konzipiert
+- etabliert im Rahmen von wissenschaftlichen Wettbewerben
+- Erweiterung des Standards mit ausreichender Dynamik möglich
+    + Zusammenarbeit am Format mit PRImA Research Lab und READ
+- METS/ALTO als Standardformatkombination in Bibliotheken
+    + Beschreibungsinventar (noch) nicht ausreichend für OCR-D
+    + andauernde Evaluation PAGE vs ALTO, Transformationsszenarien 
+    + offene Entwicklung und Erweiterung via https://github.com/altoxml
