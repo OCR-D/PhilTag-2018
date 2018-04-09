@@ -68,20 +68,37 @@ class: title-slide
 
 ---
 
-# OCR-D-Framework
+# OCR-D: Framework
 
 - Ziel:
     1. Integration der Ergebnisse der Modulprojekte
         * wohldefinierte Schnittstellen
         * etablierte Austauschformate
     2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
+        * *Apache Taverna* als Workflowengine
         * File-Cache
-        * Formatkonvertierung
+        * Formatkonvertierungen
         * *Forschungsdatenrepositorium*
-- Ansatz:
+- Referenz:
     + https://github.com/OCR-D/pyocrd/
         * Workflow auf Basis vorhandener OpenSource-Komponenten (im Aufbau)
         * Spielwiese für Entwickler
         * Illustration der Schnittstellen
 
 ---
+
+---
+
+# OCR-D: Schnittstellen
+
+- Grundlagen:
+    + Fokus für die Verarbeitung von Anfang an: **Massendigitalisierung**
+    + Dokumentation und Beispiele: https://github.com/OCR-D/spec/
+    + METS als Austauschformat
+        * `FileSection` für Referenzen auf Quell- und (Zwischen-)Ergebnisdateien
+        * `USE`-Attribute zur Kenntlichmachung
+    + METS für Ergebnisse auf **Dokumentebene**
+        * `structMap TYPE=logical` für Dokumentstruktur
+    + PAGE für Ergebnisse auf **Seitenebene**
+    + JSON für **Parameterübergabe**
+    + ALTO als **Exportformat** (verlustbehaftet!)
