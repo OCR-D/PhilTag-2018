@@ -130,8 +130,8 @@ class: title-slide
 # Warum PAGE (und nicht ALTO)?
 
 - speziell für die granularen Bedürfnisse der Repräsentation von Ergebnissen der Text- und Strukturerkennung konzipiert
-- etabliert im Rahmen von wissenschaftlichen Wettbewerben
-- Erweiterung des Standards mit ausreichender Dynamik möglich
+    + etabliert im Rahmen von wissenschaftlichen Wettbewerben
+    + Erweiterung des Standards mit ausreichender Dynamik möglich
     + Zusammenarbeit am Format mit PRImA Research Lab und READ
 - METS/ALTO als Standardformatkombination in Bibliotheken
     + Beschreibungsinventar (noch) nicht ausreichend für OCR-D
