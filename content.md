@@ -48,6 +48,26 @@ class: title-slide
 
 ---
 
+# OCR-D: Modulprojektphase
+
+- Modulprojektphase seit 01/2018
+    + acht Modulprojekte in sechs inhaltlichen Bereichen
+    + Bildvorverarbeitung:
+        * *Bildoptimierung* (DFKI Kaiserslautern)
+    + Layouterkennung:
+        * *Layouterkennung* (DFKI Kaiserslautern)
+        * *Weiterentwicklung LAREX* (JMU Würzburg)
+    + Textoptimierung:
+        * *Tesseract im OCR-D-Workflow* (UB Mannheim)
+        * *Unüberwachte Nachkorrektur mit neuronalen Netzen und FSTs* (Uni Leipzig)
+        * *Automatische Nachkorrektur mit PoCoTo* (LMU München)
+    + OCR-Training:
+        * *Modellrepositorium und automatische Schriftarterkennung* (FAU Erlangen, JGU Mainz, Uni Leipzig)
+    + Langzeitarchivierung:
+        * *Langzeitarchiv für historische Drucke* (SUB Göttingen)
+
+---
+
 # OCR-D-Framework
 
 - Ziel:
