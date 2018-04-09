@@ -42,6 +42,7 @@ ul > li > ul > li > ul > li { font-size:1.2rem }
   background-image:url("figures/ocrd.svg");
   background-repeat: no-repeat;
   background-position:right;
+  background-size: contain;
   position: fixed;
   border-bottom:1px solid #ccc;
   top: 0px;
