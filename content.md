@@ -31,9 +31,26 @@ class: title-slide
 
 ---
 
+# OCR-D
+
+- DFG-gefördertes Koordinierungsprojekt
+   + Ziele:
+        * Verbesserung von OCR-Methoden für historische Drucke (16. - 19. Jh.)
+        * technische Vorbereitung der Volltextdigitalisierung der in den VDs (16, 17, 18) verzeichneten Drucke
+   + Laufzeit:
+        * September 2015 - Oktober 2018 (Verlängerung beantragt)
+   + Ablauf:
+        1. Identifikation technischer und wissenschaftlicher Bedarfe
+        2. Konzeption und Formulierung einer Ausschreibung für Modulprojekte (MPs) zu deren Bearbeitung
+        3. Entwicklung einer Koordinierungsstruktur
+        4. Betreuung der MPs
+        5. Integration der MP-Entwicklungen in einen produktiven Workflow
+
+---
+
 # OCR-D-Framework
 
 - Ziel:
-    + Integration 
+    1. Integration der Ergebnisse der Modulprojekte
 
 ---
