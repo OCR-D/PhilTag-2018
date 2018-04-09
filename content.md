@@ -75,15 +75,28 @@ class: title-slide
         * wohldefinierte Schnittstellen
         * etablierte Austauschformate
     2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
+        * Validierung von Daten und Komponenten
+        * Discovery der integrierten Dienste
+        * Verfügbarmachung als Container
+        * Formatkonvertierung
+        * *Forschungsdatenrepositorium*
+- Ansatz:
+    + https://github.com/OCR-D/spec/
+        * Formale Specs für CLI, HTTP API, Discovery
         * *Apache Taverna* als Workflowengine
         * File-Cache
         * Formatkonvertierungen
         * *Forschungsdatenrepositorium*
 - Referenz:
     + https://github.com/OCR-D/pyocrd/
-        * Workflow auf Basis vorhandener OpenSource-Komponenten (im Aufbau)
+        * CLI für wiederkehrende Aufgaben
+          * Arbeit mit METS/PAGE
+          * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
+          * Validierung
         * Spielwiese für Entwickler
         * Illustration der Schnittstellen
+    + https://github.com/OCR-D/ocrd_tesserocr
+        * Referenzimplementierung der Interfaces (Apache 2.0, im Aufbau)
 
 ---
 
