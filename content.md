@@ -72,7 +72,9 @@ class: title-slide
 
 # OCR-D-Framework
 
+<center>
 Baierer, Hartmann, Neudecker, Würzner
+</center>
 
 ---
 
@@ -154,7 +156,9 @@ class: title-slide
 
 # OCR-D-Ground-Truth
 
+<center>
 Boenig, Federbusch, Würzner
+</center>
 
 ---
 
@@ -172,11 +176,17 @@ Boenig, Federbusch, Würzner
 
 ---
 
+# Erweiterung
+
+---
+
 class: title-slide
 
 # Training Tesseract 4
 
+<center>
 Springmann, Würzner
+</center>
 
 ---
 
@@ -188,7 +198,9 @@ class: title-slide
 
 # Danke für Ihre Aufmerksamkeit
 
+<center>
 https://ocr-d.de
 
 
 https://github.com/OCR-D
+</center>
