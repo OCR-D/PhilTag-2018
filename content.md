@@ -188,6 +188,7 @@ Boenig, Federbusch, Würzner
     + Verhältnis der Gesamtabdeckung zur Seitengröße
     + *precision*-orientiert
 - Konvertierung nach PAGE
+    + Überschriftenhierarchie zunächst als Kommentar
 
 ---
 
@@ -202,6 +203,24 @@ count:false
 # Beispiel
 
 .center[![Beispiel 1](figures/image1_custom2.jpg)]
+
+---
+
+# Umfang
+
+- zwei Lieferungen an die Kollegen an Würzburg zur Abstimmung
+    + Lieferung 1 (Publikationszeitraum von ca. 1750 - 1900): 
+      12&#x202f;275 Seiten aus 614 Titeln
+    + Lieferung 2 (Publikationszeitraum von ca. 1600 - 1750): 
+      13&#x202f;200 Seiten aus 545 Titeln
+- bisher nur Strukturinformationen
+    + Text/Nicht-Texttrennung (*page segmentation*)
+    + Segmentklassifizierung (*region classification*)
+    + auch für Bildbeschneidung (*cropping*) geeignet
+
+---
+
+# Perspektive
 
 ---
 
