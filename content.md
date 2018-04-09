@@ -282,6 +282,17 @@ Springmann, Würzner
 
 # Ausgangslage
 
+- Tesseract 4 galt lange als nur mit **synthetischen Daten** trainierbar
+    + Dokumentation zwar mit Hinweis auf *labelling some pre-existing images*
+    + aber:
+        * Skripte ohne entsprechende Optionen
+        * `Box files` für Zeilenrepräsentation *not yet implemented*
+        * *These instructions only cover the case of rendering from fonts, ...*
+        * *The only supported option is to use synthetic training data created by tesstrain.sh script using training text and unicode fonts.*
+- Trainingsskripte unnötig komplex, mit vielen impliziten Annahmen
+- nichtsdestotrotz bleibt Tesseract die verbreitetste, verfügbare OCR-Engine
+    + Unterstützung in OCR-D als Ziel
+
 ---
 
 class: title-slide
