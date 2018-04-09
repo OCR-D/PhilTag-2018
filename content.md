@@ -81,6 +81,8 @@ class: title-slide
         * Formatkonvertierung
         * File-Cache
         * *Forschungsdatenrepositorium*
+- Ansprache der MP-Software via REST und/oder CLI
+- Orchestrierung mit Hilfe von `Apache Taverna`
 
 ---
 
@@ -89,7 +91,7 @@ class: title-slide
 - [OCR-D/spec](https://github.com/OCR-D/spec)
     + Formale Specs für CLI, HTTP API, Discovery
 - [OCR-D/core](https://github.com/OCR-D/pyocrd)
-    + Implementierung der Schnittstellen, Helpers und Experimente in Python
+    + Implementierung der Schnittstellen, Helpers und Experimente in `Python`
     + CLI für wiederkehrende Aufgaben
         * Arbeit mit METS/PAGE
         * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
@@ -129,11 +131,11 @@ class: title-slide
 
 # Warum PAGE (und nicht ALTO)?
 
-- speziell für die granularen Bedürfnisse der Repräsentation von Ergebnissen der Text- und Strukturerkennung konzipiert
+- speziell für die **granularen** Bedürfnisse der Repräsentation von Ergebnissen der Text- und Strukturerkennung konzipiert
     + etabliert im Rahmen von wissenschaftlichen Wettbewerben
     + Erweiterung des Standards mit ausreichender Dynamik möglich
     + Zusammenarbeit am Format mit PRImA Research Lab und READ
-- METS/ALTO als Standardformatkombination in Bibliotheken
+- METS/ALTO als **Standardformatkombination** in Bibliotheken
     + Beschreibungsinventar (noch) nicht ausreichend für OCR-D
-    + andauernde Evaluation PAGE vs ALTO, Transformationsszenarien 
+    + andauernde Evaluation PAGE vs ALTO, **Transformationsszenarien**
     + offene Entwicklung und Erweiterung via https://github.com/altoxml
