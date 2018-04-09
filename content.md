@@ -200,7 +200,9 @@ class: title-slide
 
 <center>
 https://ocr-d.de
+</center>
 
 
+<center>
 https://github.com/OCR-D
 </center>
