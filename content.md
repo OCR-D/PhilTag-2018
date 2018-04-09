@@ -48,7 +48,7 @@ class: title-slide
 
 ---
 
-# OCR-D: Modulprojektphase
+# Modulprojektphase
 
 - Modulprojektphase seit 01/2018
     + acht Modulprojekte in sechs inhaltlichen Bereichen
@@ -68,7 +68,7 @@ class: title-slide
 
 ---
 
-# OCR-D: Framework
+# Framework
 
 - Ziel:
     1. Integration der Ergebnisse der Modulprojekte
@@ -87,9 +87,7 @@ class: title-slide
 
 ---
 
----
-
-# OCR-D: Schnittstellen
+# Formate
 
 - Grundlagen:
     + Fokus für die Verarbeitung von Anfang an: **Massendigitalisierung**
@@ -100,5 +98,11 @@ class: title-slide
     + METS für Ergebnisse auf **Dokumentebene**
         * `structMap TYPE=logical` für Dokumentstruktur
     + PAGE für Ergebnisse auf **Seitenebene**
-    + JSON für **Parameterübergabe**
+    + JSON für **Parameterübergabe** und **Interfacebeschreibung**
     + ALTO als **Exportformat** (verlustbehaftet!)
+
+---
+
+# Warum METS
+
+
