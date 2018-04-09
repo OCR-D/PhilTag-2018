@@ -178,13 +178,13 @@ Boenig, Federbusch, Würzner
 
 # Erweiterung
 
-- Ausweitung des GT-Bestands um Strukturdaten aus dem DTA
+- Ausweitung des GT-Bestands um **Strukturdaten aus dem Deutschen Textarchiv**
     + erhoben im Vorfeld der manuellen Transkription
     + zur Erfassung der Phänomenbereiche auf Werkebene
-    + rechteckige Zonen
+    + rechteckige Regionen
     + keine vorhergehende Bildoptimierung 
-- heuristische Auswahl vollständig gezonter Seiten
-    + Anzahl der Zonen
+- **heuristische Auswahl** vollständig strukturierter Seiten
+    + Anzahl der Regionen
     + Verhältnis der Gesamtabdeckung zur Seitengröße
     + *precision*-orientiert
 - Konvertierung nach PAGE
@@ -213,7 +213,7 @@ count:false
       12&#x202f;275 Seiten aus 614 Titeln
     + Lieferung 2 (Publikationszeitraum von ca. 1600 - 1750): 
       13&#x202f;200 Seiten aus 545 Titeln
-- bisher nur Strukturinformationen
+- bisher **nur Strukturinformationen**
     + Text/Nicht-Texttrennung (*page segmentation*)
     + Segmentklassifizierung (*region classification*)
     + auch für Bildbeschneidung (*cropping*) geeignet
@@ -221,6 +221,52 @@ count:false
 ---
 
 # Perspektive
+
+- Integration der zugehörigen **Volltextdaten**
+    + Rückbindung an Struktur nicht vorhanden
+    + Zeilen nicht gezont
+    + TEI-Repräsentation nicht notwendigerweise mit Struktur synchron
+- **heuristisches** Verfahren nötig
+    + manuelle Abbildung in vollem Umfang **nicht leistbar**
+    + Rezept:
+        * Abbildung der TEI-Strukturrepräsentation
+        * automatische Zeilenerkenung auf Regionenebene
+        * Integration der Volltextzeilen in die Strukturzeilen
+    + **Verlust** der Seite bei Regionen- oder Zeilendiskrepanz
+
+---
+
+# Beispiel
+
+.center[![Beispiel 2](figures/image2.jpg)]
+
+---
+
+count:false
+
+# Beispiel
+
+.center[![Beispiel 2](figures/image2_zeilen.jpg)]
+
+---
+
+count:false
+
+# Beispiel
+
+.center[![Beispiel 2](figures/image2_text.jpg)]
+
+---
+
+# Perspektive
+
+- unvollständige Strukturierung auf Seitenebene
+    + entsprechende Seiten als **Evaluationsdaten** verwendbar
+- **aber** vollständige Erfassung der Überschriftenhierachie
+    + wertvolle Ground Truth für Dokumentenanalyse
+- in Vorbereitung außerdem
+    + Dramenkorpus (nur Struktur) aus DTA-Bestand (BBAW)
+    + weitere grundständig erfasste, vollständige Daten inklusive polygoner Zonen (SBB)
 
 ---
 
