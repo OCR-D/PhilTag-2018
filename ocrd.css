@@ -17,9 +17,11 @@ pre { margin:0; padding:.5em; background:#f6f8fa }
 table { margin:auto; width:100% }
 
 ul > li > ul > li { font-size:1.5rem }
+ul > li > ol > li { font-size:1.5rem }
 ol > li > ul > li { font-size:1.5rem }
 
 ul > li > ul > li > ul > li { font-size:1.2rem }
+ul > li > ol > li > ul > li { font-size:1.2rem }
 ul > li > ul > li > ol > li { font-size:1.2rem }
 
 .center { text-align:center }

@@ -72,5 +72,16 @@ class: title-slide
 
 - Ziel:
     1. Integration der Ergebnisse der Modulprojekte
+        * wohldefinierte Schnittstellen
+        * etablierte Austauschformate
+    2. Komplettierung mit Infrastrukturkomponenten zur Orchestrierung bzw. Ausbau zum vollwertigen Workflow
+        * File-Cache
+        * Formatkonvertierung
+        * *Forschungsdatenrepositorium*
+- Ansatz:
+    + https://github.com/OCR-D/pyocrd/
+        * Workflow auf Basis vorhandener OpenSource-Komponenten (im Aufbau)
+        * Spielwiese für Entwickler
+        * Illustration der Schnittstellen
 
 ---
