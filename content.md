@@ -333,8 +333,8 @@ Springmann, Würzner
     + Generierung eines Codecs 
       ```sh
       unicharset_extractor \
-      --output_unicharset Fraktur.unicharset \
-      --norm_mode 1 *.box
+      	--output_unicharset Fraktur.unicharset \
+      	--norm_mode 1 *.box
       ```
         * entspricht einer Alphabet-Definition
     + Generierung von `lstmf files`
@@ -363,6 +363,42 @@ Springmann, Würzner
     + Aufteilung in Trainings- und Evaluationsdaten
         * erfolgt nach der Konstruktion von `box` und `lstmf files`
         * jeweils Liste mit *one file per line* nötig
+
+---
+
+# Rezept
+
+- Vorgehen:
+    + Modelltraining
+      ```sh
+      lstmtraining \
+      	--traineddata tmp/Fraktur/Fraktur.traineddata \
+      	--net_spec '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c61]' \
+      	--model_output out/base \
+      	--learning_rate 20e-4 \
+      	--train_listfile Fraktur.training_files.txt \
+      	--eval_listfile Fraktur.test_files.txt \
+      	--max_iterations 30000
+      ```
+        * `net_spec`: entspricht Netzwerkarchitextktur, [Variable-size Graph Specification Language](https://github.com/tesseract-ocr/tesseract/wiki/VGSLSpecs)
+        * `O1c61`: Festlegung der Ausgabeklassen ≡ Alphabetgröße
+        * Ausgabe von *checkpoints* während des Trainings
+
+---
+
+# Rezept
+
+- Vorgehen:
+    + Modellabschluss
+      ```sh
+      lstmtraining \
+      	--stop_training \
+      	--continue_from out/base_checkpoint \
+      	--traineddata tmp/Fraktur/Fraktur.traineddata \
+      	--model_output out/Fraktur.traineddata
+      ```
+        * Konvertierung eines *checkpoints* in ein Modell
+        * `traineddata`: Proto-Modell
 
 ---
 
