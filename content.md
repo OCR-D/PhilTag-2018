@@ -409,7 +409,7 @@ Springmann, Würzner
 
 # Evaluation
 
-- Tests mit Daten aus dem deutschen Textarchiv
+- Test mit Daten aus dem deutschen Textarchiv
     + Fraktur 19. Jahrhundert
     + ca. 30&#x202f;000 Zeilen Trainingsdaten
     + ca. 300 Zeilen Testdaten
@@ -420,8 +420,12 @@ Springmann, Würzner
 
 
 | Trainingsschritte |      CER     |
-| :---------------: | :----------: |
+| ----------------: | :----------: |
 | 10000             | 3,6&#x202f;% |
+| 15000             | 3,1&#x202f;% |
+| 50000             | 1,4&#x202f;% |
+| 80000             | 0,9&#x202f;% |
+| 100000            | 0,7&#x202f;% |
 
 ---
 
