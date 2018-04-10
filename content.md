@@ -286,7 +286,7 @@ Springmann, Würzner
     + Dokumentation zwar mit Hinweis auf *labelling some pre-existing images*
     + aber:
         * Skripte ohne entsprechende Optionen
-        * `Box files` für Zeilenrepräsentation *not yet implemented*
+        * `box files` für Zeilenrepräsentation *not yet implemented*
         * *These instructions only cover the case of rendering from fonts, ...*
         * *The only supported option is to use synthetic training data created by tesstrain.sh script using training text and unicode fonts.*
 - Trainingsskripte unnötig komplex, mit vielen impliziten Annahmen
@@ -315,7 +315,7 @@ Springmann, Würzner
     + Alignierung auf Zeilenebene
     + Tesseract 4
 - Vorgehen:
-    - Generierung von `Box files`
+    - Generierung von `box files`
         + eine Zeile pro Zeichen im GT & Koordinaten der **ganzen Zeile**
         + EOL-Marker `TAB STOP` & Koordinaten **rechte untere Ecke** 
           ```
@@ -331,8 +331,16 @@ Springmann, Würzner
 
 - Vorgehen:
     + Generierung eines Codecs 
+      ```sh
+      unicharset_extractor --output_unicharset fraktur.unicharset \
+      --norm_mode 1 *.box
       ```
-      unicharset_extractor --output_unicharset fraktur.unicharset --norm_mode 1 *.box
+    + Generierung von `lstmf files`
+      ```sh
+      for i in `ls *.tif`;do
+        base=`basename $i .tif`
+        tesseract $i $base lstm.train
+      done
       ```
 
 ---
