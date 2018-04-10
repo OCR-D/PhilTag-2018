@@ -14,7 +14,15 @@ li { line-height:1.5em; font-size:2rem }
 
 pre { margin:0; padding:.5em; background:#f6f8fa }
 
-table { margin:auto; width:100% }
+table { margin:auto; width:50% }
+
+.with-small-table > table { width: 20vw }
+.with-small-table > table > thead th { border-bottom: 1px solid black; }
+/* .with-small-table > table td { max-width: 10vw; font-family: monospace } */
+.with-small-table > table > tbody { font-family: monospace }
+.with-small-table > table > tbody > tr:nth-child(odd) { background-color: #ddd }
+.with-small-table > table td:nth-child(1) { width: 5vw; }
+.with-small-table > table td, .with-small-table > table th { padding: 0 1em; }
 
 ul > li > ul > li { font-size:1.5rem }
 ul > li > ol > li { font-size:1.5rem }
