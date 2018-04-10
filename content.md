@@ -400,6 +400,10 @@ Springmann, Würzner
       ```
         * Konvertierung eines *checkpoints* in ein Modell
         * `traineddata`: Proto-Modell
+    + Anwendung
+      ```sh
+      tesseract --tessdata-dir out/ -psm 13 -l Fraktur line_i.tif line_i
+      ```
 
 ---
 
