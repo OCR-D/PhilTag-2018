@@ -436,7 +436,7 @@ Springmann, Würzner
 - systematische Evaluation steht aus
     + mehr Testdaten
     + heterogenere Trainingsmenge
-    + wirklich herausfordernde Daten
+    + wirklich **herausfordernde** Daten
     + verschiedene Netzwerkarchitekturen
     + Einfluss von Lexika
 - übergeordnete Frage: große generische vs. kleine spezifische Modelle
