@@ -51,7 +51,7 @@ class: title-slide
 # Modulprojektphase
 
 - Modulprojektphase seit 01/2018
-    + acht Modulprojekte in sechs inhaltlichen Bereichen
+    + acht Modulprojekte in fünf inhaltlichen Bereichen
     + Bildvorverarbeitung:
         * *Bildoptimierung* (DFKI Kaiserslautern)
     + Layouterkennung:
@@ -106,7 +106,7 @@ Baierer, Hartmann, Neudecker, Würzner
         * Arbeit mit METS/PAGE
         * Resolver (Caching, Persistenz, Transformation von Dateien/URL)
         * Validierung
-    + Spielwiese für Entwickler
+    + Bereich für Entwickler
     + Illustration der Schnittstellen
 - [OCR-D/ocrd_tesserocr](https://github.com/OCR-D/ocrd_tesserocr)
     + Referenzimplementierung der Interfaces (Apache 2.0, im Aufbau)
@@ -119,8 +119,8 @@ Baierer, Hartmann, Neudecker, Würzner
     + Fokus für die Verarbeitung von Anfang an: **Massendigitalisierung**
     + Dokumentation und Beispiele: https://github.com/OCR-D/spec/
     + METS als Austauschformat
-        * `fileSection` für Referenzen auf Quell- und (Zwischen-)Ergebnisdateien
-        * `USE`-Attribute zur Kenntlichmachung
+        * `fileGrp` für Referenzen auf Quell- und (Zwischen-)Ergebnisdateien
+        * `fileGrp@USE`-Attribute zur Kenntlichmachung
     + METS für Ergebnisse auf **Dokumentebene**
         * `structMap TYPE=logical` für Dokumentstruktur
     + PAGE für Ergebnisse auf **Seitenebene**
@@ -295,7 +295,7 @@ Springmann, Würzner
 
 # Motivation
 
-- nichtsdestotrotz bleibt Tesseract die **verbreitetste, verfügbare OCR-Engine**
+- Tesseract die **verbreitetste, frei verfügbare OCR-Engine**
     + Unterstützung in OCR-D als Ziel
 - zwei Optionen:
     1. synthetisches Training
