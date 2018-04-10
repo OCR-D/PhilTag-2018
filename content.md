@@ -409,6 +409,19 @@ Springmann, Würzner
 
 # Evaluation
 
+- Tests mit Daten aus dem deutschen Textarchiv
+    + Fraktur 19. Jahrhundert
+    + ca. 30&#x202f;000 Zeilen Trainingsdaten
+    + ca. 300 Zeilen Testdaten
+- keine Lexika, keine Nachbearbeitung
+- erstaunlich schnelles Training
+    + 4000 Trainingsschritte in 1,5 h (vier Kerne)
+    + kein nennenswerter RAM-Bedarf
+
+| Traininsschritte |      CER     |
+| :--------------: | :----------: |
+| 10000            | 3,6&#x202f;% |
+
 ---
 
 # Perspektive
