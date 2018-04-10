@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td>PhilTag 2018</td>
-      <td style="text-align:right"><a href="https://www.dwds.de">Neues von OCR-D</a></td>
+      <td style="text-align:right"><a href="https://www.dwds.de">Neues aus OCR-D</a></td>
     </tr>
   </table>
 </div>
