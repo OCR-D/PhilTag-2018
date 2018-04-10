@@ -409,12 +409,12 @@ Springmann, Würzner
 
 # Evaluation
 
-- Test mit Daten aus dem deutschen Textarchiv
+- Test mit Daten aus dem Deutschen Textarchiv
     + Fraktur 19. Jahrhundert
     + ca. 30&#x202f;000 Zeilen Trainingsdaten
     + ca. 300 Zeilen Testdaten
 - keine Lexika, keine Nachbearbeitung
-- erstaunlich schnelles Training
+- erstaunlich **schnelles** Training
     + 4000 Trainingsschritte in 1,5 h (vier Kerne)
     + kein nennenswerter RAM-Bedarf
 
@@ -430,6 +430,16 @@ Springmann, Würzner
 ---
 
 # Perspektive
+
+- Zeichenerkennung **besser** als mit OCRopy auf den gleichen Daten
+- Kommunikation in Tesseract-Community, Aktualisierung der Dokumentation
+- systematische Evaluation steht aus
+    + mehr Testdaten
+    + heterogenere Trainingsmenge
+    + wirklich herausfordernde Daten
+    + verschiedene Netzwerkarchitekturen
+    + Einfluss von Lexika
+- übergeordnete Frage: große generische vs. kleine spezifische Modelle
 
 ---
 
