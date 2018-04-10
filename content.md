@@ -15,7 +15,7 @@ layout: true
 
 class: title-slide
 
-# Neues von OCR-D  
+# Neues aus OCR-D  
 
 | Kay-Michael Würzner |
 |:-------------------:|
