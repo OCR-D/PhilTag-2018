@@ -302,7 +302,8 @@ Springmann, Würzner
         * Generierung von Zeilenbildern aus Volltext und Computerschriftarten per **Fontrendering**
     2. Testen, ob es vielleicht doch geht...
 - Training mit synthetischen Daten für historische Vorlagen mit hoher Zeichendarstellungsvarianz bisher nicht erfolgreich
-- also Option 2: Analyse des mitgelieferten Skript `tesstrain.sh`
+- also Option 2: 
+  Analyse des mitgelieferten Skripts `tesstrain.sh`
 
 ---
 
@@ -314,15 +315,25 @@ Springmann, Würzner
     + Alignierung auf Zeilenebene
     + Tesseract 4
 - Vorgehen:
-    1. Generierung von `Box files`
-	+ eine Zeile pro Zeichen im GT & Koordinaten der **ganzen Zeile**
-	+ EOL-Marker `TAB STOP` & Koordinaten **rechte untere Ecke** 
+    - Generierung von `Box files`
+        + eine Zeile pro Zeichen im GT & Koordinaten der **ganzen Zeile**
+        + EOL-Marker `TAB STOP` & Koordinaten **rechte untere Ecke** 
           ```
           n 0 0 1232 49 0
           e 0 0 1232 49 0
           n 0 0 1232 49 0
           	1232 49 1233 50 0
           ```
+
+---
+
+# Rezept
+
+- Vorgehen:
+    + Generierung eines Codecs 
+      ```
+      unicharset_extractor --output_unicharset fraktur.unicharset --norm_mode 1 *.box
+      ```
 
 ---
 
