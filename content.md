@@ -342,6 +342,14 @@ Springmann, Würzner
         tesseract $i $base lstm.train
       done
       ```
+    + Generierung eines Proto-Modells
+      ```sh
+      combine_lang_model \
+      --input_unicharset Fraktur.unicharset \
+      --script_dir /home/kmw/built/langdata
+      --output_dir tmp/ \
+      --lang Fraktur
+      ```
 
 ---
 
