@@ -418,9 +418,10 @@ Springmann, Würzner
     + 4000 Trainingsschritte in 1,5 h (vier Kerne)
     + kein nennenswerter RAM-Bedarf
 
-| Traininsschritte |      CER     |
-| :--------------: | :----------: |
-| 10000            | 3,6&#x202f;% |
+
+| Trainingsschritte |      CER     |
+| :---------------: | :----------: |
+| 10000             | 3,6&#x202f;% |
 
 ---
 
