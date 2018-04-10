@@ -374,7 +374,7 @@ Springmann, Würzner
       lstmtraining \
       	--traineddata tmp/Fraktur/Fraktur.traineddata \
       	--net_spec \ 
-        	'[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c61]' \
+        '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c61]' \
       	--model_output out/base \
       	--learning_rate 20e-4 \
       	--train_listfile Fraktur.training_files.txt \
@@ -390,8 +390,7 @@ Springmann, Würzner
 # Rezept
 
 - Vorgehen:
-    + Modellabschluss 
-
+    + Modellabschluss
       ```sh
       lstmtraining \
       	--stop_training \
@@ -401,8 +400,7 @@ Springmann, Würzner
       ```
         * Konvertierung eines *checkpoints* in ein Modell
         * `traineddata`: Proto-Modell
-    + Anwendung 
-
+    + Anwendung
       ```sh
       tesseract --tessdata-dir out/ -psm 13 -l Fraktur line_i.tif line_i
       ```
