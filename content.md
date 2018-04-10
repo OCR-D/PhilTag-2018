@@ -407,6 +407,8 @@ Springmann, Würzner
 
 ---
 
+class: with-small-table
+
 # Evaluation
 
 - Test mit Daten aus dem Deutschen Textarchiv
@@ -420,7 +422,7 @@ Springmann, Würzner
 
 
 | Trainingsschritte |      CER     |
-| ----------------: | :----------: |
+| ----------------: | :----------- |
 | 10000             | 3,6&#x202f;% |
 | 15000             | 3,1&#x202f;% |
 | 50000             | 1,4&#x202f;% |
