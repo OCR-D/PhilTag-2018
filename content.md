@@ -332,24 +332,37 @@ Springmann, Würzner
 - Vorgehen:
     + Generierung eines Codecs 
       ```sh
-      unicharset_extractor --output_unicharset fraktur.unicharset \
+      unicharset_extractor \
+      --output_unicharset Fraktur.unicharset \
       --norm_mode 1 *.box
       ```
+        * entspricht einer Alphabet-Definition
     + Generierung von `lstmf files`
       ```sh
       for i in `ls *.tif`;do
-        base=`basename $i .tif`
-        tesseract $i $base lstm.train
+      base=`basename $i .tif`
+      	tesseract $i $base lstm.train
       done
       ```
+        * Tesseract-eigenes Binärformat
+
+---
+
+# Rezept
+
+- Vorgehen:
     + Generierung eines Proto-Modells
       ```sh
       combine_lang_model \
-      --input_unicharset Fraktur.unicharset \
-      --script_dir /home/kmw/built/langdata
-      --output_dir tmp/ \
-      --lang Fraktur
+      	--input_unicharset Fraktur.unicharset \
+      	--script_dir /home/kmw/built/langdata
+      	--output_dir tmp/ \
+      	--lang Fraktur
       ```
+        * Definition der Struktur des Modells
+    + Aufteilung in Trainings- und Evaluationsdaten
+        * erfolgt nach der Konstruktion von `box` und `lstmf files`
+        * jeweils Liste mit *one file per line* nötig
 
 ---
 
